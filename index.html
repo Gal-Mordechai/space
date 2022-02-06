@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>מסע בין כוכבים</title>
+    <meta name="description" content="מסע בין כוכבים" />
+    <meta name="keywords" content="מסע בין כוכבים, משחק, טכנולוגיות למידה,סביבות לימוד אינטרארטיביות" />
+    <meta name="author" content="עדן אברמוביץ, חן כהן, גל מרדכי" />
+
+    <!-- CSS -->
+
+    <link href="תמונות/logo.png" rel="icon" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="תמונות/לוגו.png"/> <!--הלוגו של המשחק שלכם-->
+                <p>מסע בין כוכבים</p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <img id="about" src="תמונות/about.png" />
+            <p><a href="https://www.hit.ac.il/telem/overview">  הפקולטה לטכנולוגיות למידה </a> </p>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <img id="play" src="תמונות/how to play.png" />
+            
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+
+            <iframe id="gameIframe" src="מסע בין כוכבים- גל מרדכי_ חן כהן ועדן אברמוביץ.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
